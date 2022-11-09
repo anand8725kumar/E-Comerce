@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://pmkisan.gov.in/BeneficiaryStatus.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="./BeneficiaryStatus.aspx_files/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"><link href="./BeneficiaryStatus.aspx_files/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"><link href="./BeneficiaryStatus.aspx_files/animate.css" rel="stylesheet" type="text/css" media="all"><link href="./BeneficiaryStatus.aspx_files/style.css" rel="stylesheet" type="text/css" media="all"><link href="./BeneficiaryStatus.aspx_files/adminlte.css" rel="stylesheet" type="text/css" media="all"><link href="./BeneficiaryStatus.aspx_files/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="./BeneficiaryStatus.aspx_files/jquery-3.6.1.min.js.download"></script>
+   
+    <script src="./BeneficiaryStatus.aspx_files/bootstrap.min.js.download"></script>
+        <script src="./BeneficiaryStatus.aspx_files/popper.min.js.download"></script>
+        <script src="./BeneficiaryStatus.aspx_files/jqueryeasing.js.download"></script>
+        <script src="./BeneficiaryStatus.aspx_files/owl.carousel.min.js.download"></script>
+        <script src="./BeneficiaryStatus.aspx_files/jquery-ui.min.js.download"></script>
+        <script src="./BeneficiaryStatus.aspx_files/main.js.download"></script>
+        <!-- jQuery Cookie -->
+        <script src="./BeneficiaryStatus.aspx_files/jquery.cookie.js.download"></script>
+        <script src="./BeneficiaryStatus.aspx_files/styleswitch.js.download"></script>
+
+
+    <script src="./BeneficiaryStatus.aspx_files/jquery-3.1.1.min.js.download"></script>
+
+
+    <script>
+        $(function () {
+
+
+            $('#ContentPlaceHolder1_txtBox').keyup(function () {
+                if ($('#ContentPlaceHolder1_rdbAction_0').is(':checked')) {
+                    var raw_text = jQuery(this).val();
+                    var return_text = raw_text.replace(/[^0-9 _]/g, '');
+                    jQuery(this).val(return_text);
+                }
+                else {
+                    var raw_text = jQuery(this).val();
+                    var return_text = raw_text.replace(/[^a-zA-Z0-9 _]/g, '');
+                    jQuery(this).val(return_text);
+                }
+            });
+
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+        function ShowPopup(title, body) {
+            $("#MyPopup .modal-title").html(title);
+            $("#MyPopup .modal-body").html(body);
+            $("#MyPopup").modal("show");
+        }
+    </script>
+
+   
+
+    <script type="text/javascript">
+        function Prints() {
+            var printWin = window.open('', '', 'left=0,top=0,width=1400,height=800,status=0');
+            printWin.document.write(document.getElementById("divprint").innerHTML);
+            printWin.document.close();
+            printWin.focus();
+            printWin.print();
+            printWin.close();
+        }
+    </script>
+    <script>
+        // WRITE THE VALIDATION SCRIPT.
+        function isNumber(evt) {
+            var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+            if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+                return false;
+
+            return true;
+        }
+        function checkAlphaNumeric(e) {
+
+            if ((e.keyCode >= 48 && e.keyCode <= 57) ||
+                (e.keyCode >= 65 && e.keyCode <= 90) ||
+                (e.keyCode >= 97 && e.keyCode <= 122))
+                return true;
+
+            return false;
+        }
+    </script>
+<title>
+
+</title></head>
+
+<body data-new-gr-c-s-check-loaded="14.1084.0" data-gr-ext-installed="">
+    <form method="post" action="https://pmkisan.gov.in/BeneficiaryStatus.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./BeneficiaryStatus.aspx_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./BeneficiaryStatus.aspx_files/MicrosoftAjax.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./BeneficiaryStatus.aspx_files/MicrosoftAjaxWebForms.js.download" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="857A1F46">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="LZ0fHdQVLhyCtp52/kONsqE5vj7DW4wMx32g3RFJ6IvCV/TAz54JWTu86PJQL9gOXdRxzPk6/m1sKIoKeAtv+l9oJaS06Y+T0eImRx4Yh1kXJNrJyGBwxPgNpUo1reHqihdcxWa+LGS//ZeITRsMv07RcQaOllXrAluDW4TuCu4=">
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$scriptmgr', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <header id="header" class="clearfix">
+            <div id="top-bar" class="hiddenMobile">
+                <div class="topheader">
+                     <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-5 col-md-5">
+                                <ul class="externaltext">
+                                    <li>
+                                        <span class="responsive_go_hindi" lang="hi">
+                                            <a target="_blank" href="https://pmkisan.gov.in/BeneficiaryStatus.aspx#" title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)" class="hinditext">Hkkjr ljdkj</a>
+                                        </span>
+                                        <span class="li_eng responsive_go_eng">
+                                            <a target="_blank" href="https://india.gov.in/" title="GOVERNMENT OF INDIA, External Link that opens in a new window">GOVERNMENT OF INDIA</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="responsive_minis_hi" lang="hi">
+                                            <a target="_blank" href="https://pmkisan.gov.in/BeneficiaryStatus.aspx#" title="कृषि एवं किसान कल्याण मंत्रालय (बाहरी वेबसाइट जो एक नई विंडो में खुलती है)" class="hinditext">d`f"k ,ao fdlku dY;k.k ea=ky;</a>
+                                        </span>
+                                        <span class="li_eng responsive_minis_eng">
+                                            <a target="_blank" href="https://pmkisan.gov.in/BeneficiaryStatus.aspx#" title="MINISTRY OF AGRICULTURE &amp; FARMERS WELFARE,External Link that opens in a new window">MINISTRY OF AGRICULTURE &amp; FARMERS WELFARE</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-7">
+                                <ul class="socialmedia">
+                                    <li><a href="https://pmkisan.gov.in/BeneficiaryStatus.aspx#MainContent" target="_top" class="li_eng responsive_minis_eng">Skip to Main Content</a></li>
+                                    <li><a href="https://pmkisan.gov.in/BeneficiaryStatus.aspx#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://pmkisan.gov.in/BeneficiaryStatus.aspx#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://pmkisan.gov.in/BeneficiaryStatus.aspx#" target="_blank" data-toggle="modal"><i class="fas fa-sign-out-alt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="midheader">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <div class="logotext">
+                                <h1>PM Kisan Samman Nidhi</h1>
+                                <p></p>
+								<p>Government of India</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-7 col-md-7">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Header-->
+        
+	<div class="container">
+		        
+		<div class="commonboxwithshadow pb-5 pt-5 fullwidth">
+			<div class="backbt">
+				<a href="https://pmkisan.gov.in/" class="custombtn">Back</a>
+			</div>
+			
+				
+			<div class="container">
+				<div id="ContentPlaceHolder1_divprintimg">
+					<div class="row m-0">
+						<div class="col-12 col-sm-3 col-md-3 p-0 mb-2">
+							<input type="submit" name="ctl00$ContentPlaceHolder1$btn_back" value="Back" id="ContentPlaceHolder1_btn_back" class="btn custombtn">
+							
+						</div>
+						<div class="col-12 col-sm-9 col-md-9 p-0 text-right">
+							<!-- <img id="img1" src="new_images/print.png" title="Print" class="CursorPointer" onmouseover="$('[data-toggle="this"]').tooltip();" onclick="Prints();" /> -->
+						</div>
+					</div>
+				</div>
+				<div id="divprint">
+					<div id="ContentPlaceHolder1_FillDIV">
+						<div class="table-responsive">
+							<table id="ContentPlaceHolder1_Table1" class="table-responsive customtable farmerapplication">
+	<tbody><tr id="ContentPlaceHolder1_tr1">
+		<th colspan="2">
+											<span id="ContentPlaceHolder1_Label1">Beneficiary Status</span>
+											<input type="hidden" name="ctl00$ContentPlaceHolder1$hdnRegNo" id="ContentPlaceHolder1_hdnRegNo" value="BR261393343">
+										</th>
+	</tr>
+	<tr id="ContentPlaceHolder1_trFarmerName">
+		<td colspan="2">
+											<span id="ContentPlaceHolder1_lblFarmerName">Farmer Name :</span>
+											<span id="ContentPlaceHolder1_txtFarmerName" class="aspNetDisabled">BIRENDRA KUMAR YADAV</span>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_trFatherName">
+		<td>
+											<label id="lblFatherName">Father Name:</label>
+											<span id="ContentPlaceHolder1_txtFatherName" class="aspNetDisabled">CHANDESHWAR YADAV</span>
+										</td>
+		<td>
+											<label id="lblMobile">Mobile Number:</label>
+											<span id="ContentPlaceHolder1_txtMobile" class="aspNetDisabled">******4207</span>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_trState">
+		<td>
+											<label id="lblState">State:</label>
+											<span id="ContentPlaceHolder1_txtState" class="aspNetDisabled">BIHAR</span>
+										</td>
+		<td>
+											<label id="lblDistric">District:</label>  
+											<span id="ContentPlaceHolder1_txtDistrict" class="aspNetDisabled">MADHUBANI</span>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_tr2">
+		<td>
+											<label id="lblVillage">Village:</label>
+											<span id="ContentPlaceHolder1_txtVillage" class="aspNetDisabled">Arghawa</span>
+										</td>
+		<td>
+											<label id="lblTown">Town:</label>
+											<span id="ContentPlaceHolder1_txtTown" class="aspNetDisabled">NA</span>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_tr10">
+		<td>
+											<label id="lblWard">Ward:</label>  
+											<span id="ContentPlaceHolder1_txtWard" class="aspNetDisabled">NA</span>   
+										</td>
+		<td>
+											<label id="lblHomeAddress">Home Address:</label>
+											<span id="ContentPlaceHolder1_txtHomeAddress" class="aspNetDisabled">Arghawa</span>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_trRegistrationStatus">
+		<td>
+											<label id="lblRegStatus">Registration Status:</label>
+											<span id="ContentPlaceHolder1_txtRegStatus" class="aspNetDisabled">Registration done ( BR261393343 )</span>
+										</td>
+		<td>
+											<label id="lblRegDate">Registration Date:</label>
+											<span id="ContentPlaceHolder1_txtRegDate" class="aspNetDisabled">18/11/2019</span>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_treKYC">
+		<td>
+                                                <label id="lblEkycStatus">Aadhaar Demo Authentication Status:</label>
+                                                <span id="ContentPlaceHolder1_txtEkycStatus" class="aspNetDisabled">Success</span>
+                                            </td>
+		<td>
+                                              <label id="lblEkyc" class="control-label required">eKYC Done :</label>
+                                                <span id="ContentPlaceHolder1_txtekyc_S" class="aspNetDisabled">YES</span>
+                                            </td>
+	</tr>
+	<tr id="ContentPlaceHolder1_tr3">
+		<td>
+											<label id="lblActiveInActive" class="control-label required">Eligibility :</label>
+											<span id="ContentPlaceHolder1_txtlblActiveInActive" class="aspNetDisabled">YES</span>
+										</td>
+		<td>
+											<div id="ContentPlaceHolder1_divActiveStatus" style="display:none;">
+												<label id="lblReason" class="control-label required">Reason:</label>
+												<span id="ContentPlaceHolder1_txtReason" class="aspNetDisabled"></span>
+											</div>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_tr12">
+		<td>
+											<div id="ContentPlaceHolder1_div1">
+												<label id="lblPaymentMode" class="control-label required">Payment Mode:</label>
+												<span id="ContentPlaceHolder1_txtPaymentMode" class="aspNetDisabled">AADHAAR</span>
+											</div>
+										</td>
+		<td>
+											<label id="lblAccount">Account Number:</label>  
+											<span id="ContentPlaceHolder1_txtAccount" class="aspNetDisabled">NA</span>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_tr5">
+		<td>
+											<label id="lblPFSStatus" class="control-label required">PFMS / Bank Status:</label>
+											<span id="ContentPlaceHolder1_txtPFSStatus" class="aspNetDisabled">Farmer Record has been accepted by PFMS / Bank</span>
+										</td>
+		<td>
+											<div id="ContentPlaceHolder1_divPFMSRejReason" style="display:none;">
+												<label id="lblPFMSRejReason" class="control-label required">PFMS / Bank Rejection Reason:</label>
+												<span id="ContentPlaceHolder1_txtPFMSRejReason" class="aspNetDisabled"></span>
+												<span id="ContentPlaceHolder1_txtblink" class="aspNetDisabled" style="font-weight:bold;"></span>
+											</div>
+											<div id="ContentPlaceHolder1_divPFMSDate" style="display:;">
+												<label id="lblPFMSDate" class="control-label required">PFMS Response Date:</label>
+												<span id="ContentPlaceHolder1_txtPFMSDate" class="aspNetDisabled">17/03/2022</span>
+											</div>
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_trLandSeeding">
+		<td>
+											<label id="lbllandSeeding" class="control-label required">Land Seeding:</label>
+											<span id="ContentPlaceHolder1_txtLand_Seeding" class="aspNetDisabled" onclick="txtLand_Seeding_Click">YES</span>
+										</td>
+		<td></td>
+	</tr>
+	<tr id="ContentPlaceHolder1_tr4">
+		<td colspan="2">
+											<table id="ContentPlaceHolder1_Table2" class="customtable farmerapplication farmerapplicationinner">
+			<tbody><tr id="ContentPlaceHolder1_tr7">
+				<th>
+															<span id="ContentPlaceHolder1_Label9">Status</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label2">Ist Installment</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label4">2nd Installment</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label6">3rd Installment </span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label3">4th Installment </span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label7">5th Installment </span>
+														</th>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr6">
+				<td>
+														<label id="Label10" class="control-label required">Payment Status:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt1stInstStatus" class="aspNetDisabled">1st installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt2ndInstStatus" class="aspNetDisabled">2nd installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt3rdInstStatus" class="aspNetDisabled">3rd installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt4thInstStatus" class="aspNetDisabled">4th installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt5thInstStatus" class="aspNetDisabled">5th installment payment done</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr23">
+				<td>
+															<label id="Label22" class="control-label required">Bank Name:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt1stBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt2ndBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt3rdBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt4thBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt5thBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr11" style="height:15px; padding-top:5px;">
+				<td>
+															<label id="Label11" class="control-label required">Credited Account:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt1stCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+				<td>
+																<span id="ContentPlaceHolder1_txt2ndCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt3rdCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt4thCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt5thCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr8">
+				<td>
+															<label id="Label12" class="lbl1stInstCreditDate">Credited Date:</label>
+														</td>
+				<td>
+																<span id="ContentPlaceHolder1_txt1stInstCreditDate" class="aspNetDisabled">07/12/2019</span>
+														</td>
+				<td>
+																<span id="ContentPlaceHolder1_txt2ndInstCreditDate" class="aspNetDisabled">02/01/2020</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt3rdInstCreditDate" class="aspNetDisabled">08/05/2020</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt4thInstCreditDate" class="aspNetDisabled">10/08/2020</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt5thInstCreditDate" class="aspNetDisabled">25/12/2020</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr9">
+				<td>
+															<label id="Label5" class="control-label required">UTR No:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt1stInstUTR" class="aspNetDisabled">********2720</span>                                               
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt2ndInstUTR" class="aspNetDisabled">********2140</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt3rdInstUTR" class="aspNetDisabled">********2457</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt4thInstUTR" class="aspNetDisabled">********2226</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt5thInstUTR" class="aspNetDisabled">********0038</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr13">
+				<td>
+															<label id="Label13" class="control-label required">Transaction Failed Reason:</label>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt1stInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt2ndInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt3rdInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt4thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt5thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr14">
+				<td>
+															<label id="Label14" class="control-label required">FTO Pending Reason:</label>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt1stInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt2ndInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt3rdInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt4thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt5thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+		</tbody></table>
+		
+										</td>
+	</tr>
+	<tr id="ContentPlaceHolder1_tr15">
+		<td colspan="2">
+											<table id="ContentPlaceHolder1_Table3" class="customtable farmerapplication farmerapplicationinner">
+			<tbody><tr id="ContentPlaceHolder1_tr16">
+				<th>
+															<span id="ContentPlaceHolder1_lblstatus">Status</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label8">6th Installment</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_lbl7th">7nth Installment</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_lbl8th">8th Installment</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_lbl9th">9th Installment</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label15">10th Installment</span>
+														</th>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr17">
+				<td>
+															<label id="Label16" class="control-label required">Payment Status:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt6thInstStatus" class="aspNetDisabled">6th installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt7thInstStatus" class="aspNetDisabled">7nth installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt8thInstStatus" class="aspNetDisabled">8th installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt9thInstStatus" class="aspNetDisabled">9th installment payment done</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt10thInstStatus" class="aspNetDisabled">Payment Processed</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr24">
+				<td>
+														<label id="Label23" class="control-label required">Bank Name:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt6thBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt7thBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt8thBankName" class="aspNetDisabled">UNION BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt9thBankName" class="aspNetDisabled">STATE BANK OF INDIA</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt10thBankName" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr18">
+				<td>
+														<label id="Label17" class="control-label required">Credited Account:</label>
+														</td>
+				<td>
+																<span id="ContentPlaceHolder1_txt6thCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt7thCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt8thCreditAccount" class="aspNetDisabled">********3092</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt9thCreditAccount" class="aspNetDisabled">********3782</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt10thCreditAccount" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr19">
+				<td>
+															<label id="Label18" class="lbl1stInstCreditDate">Credited Date:</label>
+														</td>
+				<td>
+																<span id="ContentPlaceHolder1_txt6thInstCreditDate" class="aspNetDisabled">15/05/2021</span>
+														</td>
+				<td>
+																<span id="ContentPlaceHolder1_txt7thInstCreditDate" class="aspNetDisabled">10/08/2021</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt8thInstCreditDate" class="aspNetDisabled">02/01/2022</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt9thInstCreditDate" class="aspNetDisabled">01/06/2022</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt10thInstCreditDate" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr20">
+				<td>
+															<label id="Label19" class="control-label required">UTR No:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt6thInstUTR" class="aspNetDisabled">********4074</span>                                               
+														</td>
+				<td>
+																<span id="ContentPlaceHolder1_txt7thInstUTR" class="aspNetDisabled">********5938</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt8thInstUTR" class="aspNetDisabled">********7122</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt9thInstUTR" class="aspNetDisabled">********4405</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt10thInstUTR" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr21">
+				<td>
+															<label id="Label20" class="control-label required">Transaction Failed Reason:</label>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt6thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt7thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt8thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt9thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt10thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+			<tr id="ContentPlaceHolder1_tr22">
+				<td>
+															<label id="Label21" class="control-label required">FTO Pending Reason:</label>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt6thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt7thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt8thInvalidRFT" class="aspNetDisabled">FTO will be generated</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt9thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt10thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+			</tr>
+		</tbody></table>
+		
+										</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+											<table id="ContentPlaceHolder1_Table4" class="customtable farmerapplication farmerapplicationinner">
+			<tbody><tr>
+				<th>
+															<span id="ContentPlaceHolder1_Label24">Status</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label25">11th Installment</span>
+														</th>
+				<th>
+															<span id="ContentPlaceHolder1_Label26">12th Installment</span>
+														</th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>
+															<label id="lbl11thInstStatus" class="control-label required">Payment Status:</label>                                                
+														</td>
+				<td>                                            
+															<span id="ContentPlaceHolder1_txt11thInstStatus" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt12thInstStatus" class="aspNetDisabled">-----</span>
+														</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+															<label id="lbl11thBankName" class="control-label required">Bank Name:</label>                                                
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt11thBankName" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt12thBankName" class="aspNetDisabled">-----</span>
+														</td>
+				<td>   
+														</td>
+				<td> 
+														</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+														<label id="lbl11thCreditAccount" class="control-label required">Credited Account:</label>                                                 
+													</td>
+				<td>                                           
+															<span id="ContentPlaceHolder1_txt11thCreditAccount" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+															 <span id="ContentPlaceHolder1_txt12thCreditAccount" class="aspNetDisabled">-----</span>
+													</td>
+				<td>                                                
+													</td>
+				<td>                                              
+													</td>
+				<td>                                          
+													</td>
+			</tr>
+			<tr>
+				<td>
+															<label class="lbl1stInstCreditDate">Credit Date:</label>
+														</td>
+				<td>                                               
+															<span id="ContentPlaceHolder1_txt11thInstCreditDate" class="aspNetDisabled">-----</span>
+													</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt12thInstCreditDate" class="aspNetDisabled">-----</span>
+													</td>
+				<td>                                               
+													</td>
+				<td>
+													</td>
+				<td>                                             
+													</td>
+			</tr>
+			<tr>
+				<td>
+														<label class="lbl11thInstUTR">UTR No:</label>
+													</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt11thInstUTR" class="aspNetDisabled">-----</span>   
+													</td>
+				<td>
+														<span id="ContentPlaceHolder1_txt12thInstUTR" class="aspNetDisabled">-----</span>
+													</td>
+				<td>
+													</td>
+				<td>
+													</td>
+				<td>
+													</td>
+			</tr>
+			<tr>
+				<td>
+															<label id="lbl11thInstRejReason" class="control-label required">Transaction Failed Reason:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt11thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt12thInstRejReason" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														</td>
+				<td>
+														</td>
+				<td>
+														</td>
+			</tr>
+			<tr>
+				<td> 
+															<label id="lbl11thInvalidRFT" class="control-label required">FTO Pending Reason:</label>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt11thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+															<span id="ContentPlaceHolder1_txt12thInvalidRFT" class="aspNetDisabled">-----</span>
+														</td>
+				<td>
+														</td>
+				<td>
+														</td>
+				<td>
+														</td>
+			</tr>
+		</tbody></table>
+		
+										</td>
+	</tr>
+</tbody></table>
+
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div id="ContentPlaceHolder1_divEmpty" class="row">
+					
+					
+				</div>
+			</div>			
+		</div>
+	</div>
+	
+<div id="MyPopup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    ×</button>
+                <h4 class="modal-title">
+                </h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="footeraerea">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-2 col-md-2 footelogo">                       
+                        <img src="./BeneficiaryStatus.aspx_files/niclogo.png" alt="NIC Logo">
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-8 copyrighttext pt-1">
+                        <p><a href="https://pmkisan.gov.in/Disclaimer.aspx" target="_blank">Disclaimer</a> | <a href="javascript:void(0);">Terms and Conditions</a> | <a href="javascript:void(0);">Privacy Policy</a> | <a href="javascript:void(0);">Copyright Policy</a> | <a href="javascript:void(0);">Hyperlinking Policy</a> | <a href="javascript:void(0);">Accessibility</a></p>
+                        <p>©  </p>
+                        <p>Page Last Updated on : 16/10/2022</p>
+					   
+                    </div>
+                    <div class="col-12 col-sm-2 col-md-2 footelogo footerlogodigital">
+                        <img src="./BeneficiaryStatus.aspx_files/digitalindia.png" alt="Digital India">
+                    </div>
+                    <input type="submit" name="ctl00$btnTest" value="Button" id="btnTest" style="display:none;">
+                </div>
+            </div>
+        </div>
+    </form>
+
+<div class="btntoTop"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
